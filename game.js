@@ -10,17 +10,17 @@ function getComputerChoice(){
 
 function playRound(playerSelection, computerSelection){
     if (playerSelection==computerSelection){
-        console.log("Game ties!");
+        console.log("Round ties!");
         return [0, 0];
     }
     else if ((playerSelection=="Rock")&&(computerSelection=="Scissor")||
     (playerSelection=="Scissor")&&(computerSelection=="Paper")||
     (playerSelection=="Paper")&&(computerSelection=="Rock")){
-        console.log(`You win!${playerSelection} beats ${computerSelection}`);
+        console.log(`You win this round!${playerSelection} beats ${computerSelection}`);
         return [1, 0];
     }
     else{
-        console.log(`You lose!${computerSelection} beats ${playerSelection}`);
+        console.log(`You lose this round!${computerSelection} beats ${playerSelection}`);
         return [0, 1];
     }
 }
@@ -35,11 +35,8 @@ function game(){
         computerScoreTotal += computerScore;
 
     }
-    
-    if (playerScoreTotal == computerScoreTotal){
-        console.log("Game ties!");
-    }
-    else if(playerScoreTotal>computerScoreTotal){
+     
+    if(playerScoreTotal>computerScoreTotal){
         console.log("You win!");
     }
     else{
