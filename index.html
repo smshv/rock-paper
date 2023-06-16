@@ -3,9 +3,37 @@
     <head>
         <meta charset="utf-8">
         <title>Rock-Paper-Scissor</title>
-        <script src="game.js"></script>
+        <link href="style.css" rel="stylesheet">
+        <script src="game.js" defer></script>
     </head>
     <body>
-        <h3>GAME!</h3>
+        <div class="top-div">
+            <div class="top-empty"></div>
+            <h3>Round left:&nbsp<span class="scr-text round-left"></span></h3>
+            <div class="score-container">
+                <h4><span><img class="score-icon" src="./images/player.png"></span> Player Score:&nbsp<span class="scr-text player-score"></span></h3>
+                <h4><span><img class="score-icon" src="./images/computer.png"></span> Computer Score:&nbsp<span class="scr-text computer-score"></span></h4>
+            </div>
+        </div>
+        <div class="mid-div">
+            <h3 class="scr-text round-msg"></h3>
+        </div>
+        <div class="input-div">
+            <div class="player-button">
+                <span><h3>Player</h3></span>
+                <button id="Rock"><img class="button-img" src="./images/rock.png"> Rock</button>
+                <button id="Paper"><img class="button-img" src="./images/paper.png"> Paper</button>
+                <button id="Scissor"><img class="button-img" src="./images/scissor.png"> Scissor</button>
+            </div>
+            <div class="computer-button">
+                <span><h3>Computer</h3></span>
+                <button id="Rock"><img class="button-img" src="./images/rock.png"> Rock</button>
+                <button id="Paper"><img class="button-img" src="./images/paper.png"> Paper</button>
+                <button id="Scissor"><img class="button-img" src="./images/scissor.png"> Scissor</button>
+            </div>
+        </div>
+        <div class="reset-div">
+            <button><img class="button-img" src="./images/reset.png"> Reset</button>
+        </div>
     </body>
 </html>

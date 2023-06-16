@@ -1,0 +1,67 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.score-icon{
+    width: 50px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+h3, h4, h5{
+    margin: 0xp;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.top-div{
+    display: flex;
+}
+.top-empty, .score-container{
+    flex: 1;
+}
+.score-container{
+    display: flex;
+    gap: 24px;
+    justify-content: right;
+}
+.h4{
+    display: flex;
+    align-items: center;
+}
+.mid-div, .reset-div{
+    align-self: center;
+}
+.input-div{
+    display: flex;
+    justify-content: space-around;
+}
+.player-button, .computer-button{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.07s;
+}
+
+button{
+    width: 150px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+.selected{
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
+.button-img{
+    width: 25%;
+    height: 50%;
+    padding-right: 4px;
+}
