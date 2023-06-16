@@ -30,9 +30,6 @@ function reTransformButton(){ //remove transfrom of the last selected button
     }
 }
 
-function transformButton(playerChoice, computerChoice){
-}
-
 function initalize(){
     screenText["round-left"] = 5;
     screenText["player-score"] = 0;
@@ -79,7 +76,6 @@ function playRound(e){
             screenText["round-msg"] = "You lose :(";
     }
     updateScreenText();
-    e.stopPropagation();
 }
 
 initalize();
